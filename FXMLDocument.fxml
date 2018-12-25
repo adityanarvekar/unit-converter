@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="322.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unitconverter.FXMLDocumentController">
+    <children>
+        <Button fx:id="btnConvert" layoutX="322.0" layoutY="63.0" onAction="#convertAction" prefHeight="40.0" prefWidth="83.0" text="Convert" />
+        <Label fx:id="label1" alignment="CENTER_RIGHT" layoutX="44.0" layoutY="40.0" minHeight="16" minWidth="69" text="Centigrade" textAlignment="RIGHT" />
+      <TextField fx:id="inputNum1" alignment="CENTER_RIGHT" layoutX="127.0" layoutY="40.0" prefHeight="31.0" prefWidth="122.0" promptText="32 C" />
+      <TextField fx:id="inputNum2" alignment="CENTER_RIGHT" layoutX="127.0" layoutY="91.0" prefHeight="31.0" prefWidth="122.0" promptText="64 F" />
+      <Label fx:id="label2" alignment="CENTER_RIGHT" layoutX="44.0" layoutY="91.0" minHeight="16" minWidth="69" text="Fahrenheit" textAlignment="RIGHT" />
+      <RadioButton fx:id="tempRadio" layoutX="44.0" layoutY="153.0" mnemonicParsing="false" onAction="#convertTemperature" selected="true" text="Temperature" />
+      <RadioButton fx:id="heightRadio" layoutX="188.0" layoutY="153.0" mnemonicParsing="false" onAction="#convertHeight" text="Height" />
+      <RadioButton fx:id="massRadio" layoutX="292.0" layoutY="153.0" mnemonicParsing="false" onAction="#convertMass" text="Mass" />
+      <Label fx:id="errorText" layoutX="24.0" layoutY="196.0" prefHeight="103.0" prefWidth="400.0" textFill="#dc0800" wrapText="true" />
+    </children>
+</AnchorPane>
